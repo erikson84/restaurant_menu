@@ -53,7 +53,9 @@ h4 {
     text-shadow: 2px 2px 4px black;
     font-size: 15px;
     color: azure;
-    line-height: 20px;
+    display: flex;
+    align-items: center;
+
 }
 
 nav {
@@ -101,6 +103,38 @@ main > p {
     color: azure;
     margin: 30px 20vw;
     line-height: 20px;
+}
+
+form {
+    display: grid;
+    align-items: stretch;
+    margin: 40px 30vw;
+    justify-content: center;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    flex: 1 1 auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px black;
+    font-size: 15px;
+    color: azure;
+    margin: 20px 0;
+}
+
+button.order {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: 50px;
+    width: 20vw;
+    margin: 50px;
+    text-shadow: 2px 2px 4px black;
+    font-size: 15px;
+    color: azure;
 }
 
 footer {

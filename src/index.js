@@ -1,6 +1,7 @@
 import { generateHeading } from "./genMain";
 import { generateAbout } from "./genAbout";
 import { generateMenu } from "./genMenu";
+import { generateOrder } from "./genOrder";
 import "./style.css";
 import burgerImg from "./burgerNFries.jpg";
 import beansImg from "./riceAndBeans.jpg";
@@ -43,6 +44,12 @@ function changeTab(e) {
                                ["Fish'n'Chips", fishImg],
                                ["Burger and Fries", burgerImg]]);
             break;
+        
+        case "order":
+            generateOrder(main);
+            break;
 
+        default:
+            break;
     }
 }
