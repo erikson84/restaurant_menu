@@ -1,4 +1,59 @@
+@font-face {
+    font-family: 'Manuscript Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Manuscript Regular'), url('Manuscript.woff') format('woff');
+}
+
 html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ;
+    height: 40vh;
+    background-image: url('./headingBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header > h1 {
+    flex: 1 1 auto;
+    font-family: "Manuscript Regular";
+    font-size: 120px;
+    margin: 20px;
+    color:azure;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+button.menuButton {
+    flex: 1 1 auto;
+    font-size: 30px;
+    background-color: transparent;
+    color: azure;
+    border: none;
+    padding: 10px 20px;   
+}
+
+button.menuButton:hover {
+    border-bottom: 5px azure solid;
+    padding-bottom: 5px;
 }

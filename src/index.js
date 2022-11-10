@@ -1,9 +1,6 @@
+import { generateHeading } from "./genMain";
+import "./style.css";
+
 const content = document.querySelector("#content");
 
-addTitle(prompt("Qual o título que você quer?"));
-
-function addTitle(text) {
-    const newH1= document.createElement('h1')
-    newH1.textContent = text;
-    content.appendChild(newH1);
-}
+generateHeading(content);
