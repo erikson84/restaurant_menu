@@ -8,6 +8,8 @@
 html {
     margin: 0;
     padding: 0;
+    min-height: 100%;
+
 }
 
 body {
@@ -72,7 +74,7 @@ button.activeTab {
     border-bottom: 5px azure solid;
     padding-bottom: 5px;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 main {
