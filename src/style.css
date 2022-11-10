@@ -14,13 +14,13 @@ html {
 
 body {
     width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Courier New', Courier, monospace;
     background-image: url('./headingBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
 }
 
 div#content {
@@ -45,6 +45,15 @@ h1 {
     margin: 20px;
     color:azure;
     text-shadow: 2px 2px 4px black;
+    font-weight: lighter;
+}
+
+h4 {
+    flex: 1 1 auto;
+    text-shadow: 2px 2px 4px black;
+    font-size: 15px;
+    color: azure;
+    line-height: 20px;
 }
 
 nav {
@@ -81,6 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    align-items: stretch;
 }
 
 main > p {
@@ -105,4 +115,33 @@ footer {
 footer > p {
     margin: 5px;
     padding: 0;
+}
+
+div.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 50px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 20vw;
+    aspect-ratio: 1/1;
+    transition: 0.2s all;
+}
+
+div.card:hover {
+    transform: scale(1.1);
+}
+
+img.cardImg {
+    max-width: 100%;
+    border-radius: 20px;
+
 }
