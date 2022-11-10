@@ -12,6 +12,7 @@ function generateHeading(content) {
     for (let btn of ["About Us", "Menu", "Order"]) {
         const button = document.createElement("button");
         button.classList.add("menuButton");
+        button.id = btn.split(' ')[0].toLowerCase();
         button.textContent = btn;
         menu.appendChild(button);
     }

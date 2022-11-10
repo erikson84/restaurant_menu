@@ -7,6 +7,8 @@ const content = document.querySelector("#content");
 generateHeading(content);
 
 const main = document.querySelector("main");
-const navButtons = document.querySelector("nav");
 
 generateAbout(main);
+
+const aboutBtn = document.getElementById("about");
+aboutBtn.classList.add("activeTab");
