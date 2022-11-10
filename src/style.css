@@ -17,11 +17,16 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+div#content {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: ;
     height: 40vh;
     background-image: url('./headingBackground.jpg');
     background-size: cover;
@@ -29,7 +34,7 @@ header {
     background-position: center center;
 }
 
-header > h1 {
+h1 {
     flex: 1 1 auto;
     font-family: "Manuscript Regular";
     font-size: 120px;
@@ -56,4 +61,25 @@ button.menuButton {
 button.menuButton:hover {
     border-bottom: 5px azure solid;
     padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: slategrey;
+}
+
+footer {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
